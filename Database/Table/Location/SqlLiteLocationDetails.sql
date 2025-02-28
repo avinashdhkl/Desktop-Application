@@ -1,0 +1,10 @@
+CREATE TABLE  TBL_LocationDetail(
+RowId			INTEGER  PRIMARY KEY AUTOINCREMENT NOT NULL,
+LocationId		INTEGER  UNIQUE,
+CustomerId		BIGINT	NULL,
+Address			VARCHAR(100),
+CreatedDate		DATETIME,
+UpdateDate		DATETIME
+
+)
+

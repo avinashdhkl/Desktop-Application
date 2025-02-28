@@ -1,0 +1,9 @@
+CREATE TABLE Customer.TBL_CustomerDetails(
+CustomerId		BIGINT PRIMARY KEY IDENTITY(1,1) NOT NULL,
+FullName		VARCHAR(100) NULL,
+Email			VARCHAR(50) NULL,
+PhoneNo			VARCHAR(20)	NULL,
+CreatedDate		DATETIME	NULL,
+UpdateDate		DATETIME	Null
+
+)
