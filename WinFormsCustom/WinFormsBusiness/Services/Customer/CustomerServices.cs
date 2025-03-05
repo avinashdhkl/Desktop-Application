@@ -362,6 +362,10 @@ namespace WinFormsBusiness.Services.Customer
                             //Thread.Sleep(120000);
                             await _sqlLiteDataAccess.InsertCustomerDataTable(item);
                         }
+                        else if (fetchById.CustomerDetails.FullName != item.FullName || fetchById.CustomerDetails.PhoneNo != item.PhoneNo || fetchById.CustomerDetails.Email != item.Email)
+                        {
+                            await _sqlLiteDataAccess.UpdateCustomerDataTable(item);
+                        }
                     }
                    
                 }
